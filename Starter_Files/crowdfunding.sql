@@ -1,6 +1,6 @@
 create table campaign(
 	"cf_id" FLOAT NOT null,
-	"contact_id" INT NOT null,
+	"contact_id" FLOAT NOT null,
 	"company_name" VARCHAR(75),
 	"description" VARCHAR(100),
 	"goal" FLOAT NOT null,
@@ -26,7 +26,7 @@ create table category(
 	
 
 create table contacts(
-	"contact_id" INT NOT null PRIMARY KEY,
+	"contact_id" FLOAT NOT null PRIMARY KEY,
 	"first_name" VARCHAR(30) NOT null,
 	"last_name" VARCHAR(30) NOT null ,
 	"email" VARCHAR(75) NOT null);
