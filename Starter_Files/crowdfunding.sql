@@ -16,16 +16,17 @@ create table campaign(
 	PRIMARY KEY ("category_id","subcategory_id","contact_id"));
 	
 create table subcategory(
-	"subcategory_id" VARCHAR(20),
-	"sub-category" VARCHAR(30) NOT null);
+	 "subcategory_id" VARCHAR(20) NOT NULL PRIMARY KEY,
+	"sub-category" VARCHAR(30) NOT null,
+	);
 	
 create table category(
-	"category_id" VARCHAR(30),
+	"category_id" VARCHAR(30) NOT null PRIMARY KEY,
 	"category" VARCHAR(30) NOT null);
 	
 
 create table contacts(
-	"contact_id" FLOAT NOT null,
+	"contact_id" FLOAT NOT null PRIMARY KEY,
 	"first_name" VARCHAR(30) NOT null,
 	"last_name" VARCHAR(30) NOT null ,
 	"email" VARCHAR(75) NOT null);
