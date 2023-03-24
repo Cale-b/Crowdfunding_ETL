@@ -40,3 +40,9 @@ ALTER TABLE campaign
     ADD CONSTRAINT fk_campaign_contact FOREIGN KEY (contact_id) REFERENCES contacts(contact_id)
 	
 SELECT * FROM campaign
+
+SELECT * FROM contacts
+
+SELECT * FROM category
+
+SELECT * FROM subcategory
